@@ -45,6 +45,11 @@ class Player
         puts "Please, enter one letter at a time!"
         return
       end
+      if guessed_letter == " "
+        puts ""
+        puts "You didn't enter a letter, please try again."
+        return
+      end
       if @guessed_letters.include?(guessed_letter)
         puts ""
         puts "You already guessed that letter, please choose a different one"
